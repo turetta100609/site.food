@@ -9,9 +9,7 @@
 </head>
 
 <body class="h-screen flex items-center justify-center bg-[#8B1E1E] relative overflow-hidden">
-  <div class="absolute top-0 left-0 h-full w-40 pointer-events-none select-none">
-    <img src="./src/css/img/login-b.png" alt="" class="h-full w-full object-contain" />
-  </div>
+  
 
   <div class="bg-gray-100 w-80 p-6 shadow-lg z-10">
 <h1 class="block w-full text-center text-red-700 text-3xl font-serif mb-6 tracking-widest">
@@ -30,20 +28,28 @@
     <div class="text-right text-xs text-gray-500 mb-4 cursor-pointer">
       Esqueceu a senha?
     </div>
-    <button class="w-full bg-green-700 text-white py-1 rounded-sm mb-4 hover:bg-green-800 transition">
-      entrar
-    </button>
+    <a href="./index.html" class="block w-full bg-green-700 text-white py-1 rounded-sm mb-4 hover:bg-green-800 transition text-center">Entrar</a>
     <p class="text-center text-xs text-gray-500 mb-3">
       Ou entrar com
     </p>
     <div class="flex justify-center gap-6 mb-4 text-black text-xl">
-      <i class="fab fa-facebook-square cursor-pointer hover:text-blue-600"></i>
-      <i class="fab fa-instagram-square cursor-pointer hover:text-pink-500"></i>
-      <i class="fab fa-twitter-square cursor-pointer hover:text-blue-400"></i>
-    </div>
+  
+  <a href="https://www.facebook.com" target="_blank">
+    <i class="fab fa-facebook-square cursor-pointer hover:text-blue-600"></i>
+  </a>
+
+  <a href="https://www.instagram.com" target="_blank">
+    <i class="fab fa-instagram-square cursor-pointer hover:text-pink-500"></i>
+  </a>
+
+  <a href="https://www.twitter.com" target="_blank">
+    <i class="fab fa-twitter-square cursor-pointer hover:text-blue-400"></i>
+  </a>
+
+</div>
     <p class="text-center text-xs text-gray-500">
       Não tem uma conta? 
-      <span class="text-red-600 cursor-pointer hover:underline">Cadastre-se.</span>
+      <a href="./cadastro.html" class="text-red-600 cursor-pointer hover:underline">Cadastre-se.</a>
     </p>
   </div>
 
