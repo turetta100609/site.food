@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>site.food</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Flowbite CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body class="bg-gray-100 min-h-screen flex flex-col items-center p-6">
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="bg-[#771D1D] px-4 py-2.5">
+            <div class="flex justify-between items-center max-w-screen-xl mx-auto">
+                <div class="flex items-center">
+                    <img src="./src/css/img/image 7.png" class="h-8 mr-3 rounded-full" />
+                    <span class="text-white text-xl font-semibold">
+                        Artesano Pizza & Burger
+                    </span>
+                </div>
+                <a href="https://www.google.com/maps?q=Rua+Exemplo+123+Matinhos+PR" target="_blank" class="flex items-center gap-2 text-sm text-white font-medium hover:text-red-600"> 📍 Rua Exemplo, 123 - Matinhos/PR </a>
+            </div>
+        </nav>
+    </header>
+
+  <!-- Título -->
+  <h1 class="text-3xl font-bold mb-6">Buscar Produtos</h1>
+
+  <!-- Campo de busca -->
+  <input 
+    type="text" 
+    id="searchInput"
+    placeholder="Digite para buscar..."
+    class="w-full max-w-md p-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+    onkeyup="buscarItens()"
+  />
+
+  <!-- Lista de itens -->
+  <div id="lista" class="mt-6 w-full max-w-md space-y-3">
+
+    <div class="item bg-white p-4 rounded-xl shadow">X-Bacon</div>
+    <div class="item bg-white p-4 rounded-xl shadow">Mussarela</div>
+    <div class="item bg-white p-4 rounded-xl shadow">Pizza de Calabresa</div>
+    <div class="item bg-white p-4 rounded-xl shadow">Coca Cola</div>
+    <div class="item bg-white p-4 rounded-xl shadow">4 queijos</div>
+    <div class="item bg-white p-4 rounded-xl shadow">X-egg</div>
+
+  </div>
+
+  <!-- Script -->
+  <script>
+    function buscarItens() {
+      const input = document.getElementById("searchInput").value.toLowerCase();
+      const itens = document.querySelectorAll(".item");
+
+      itens.forEach(item => {
+        const texto = item.textContent.toLowerCase();
+        item.style.display = texto.includes(input) ? "block" : "none";
+      });
+    }
+  </script>
+
+</body>
+</html>
