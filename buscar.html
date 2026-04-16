@@ -28,54 +28,60 @@
         <div class="flex justify-between items-center max-w-screen-xl mx-auto">
             <div class="flex items-center">
                 <img src="./src/css/img/image 7.png" class="h-8 mr-3 rounded-full" />
-                <span class="text-white text-xl font-semibold">
+                <a href="index.html" class="text-white text-xl font-semibold">
                     Artesano Pizza & Burger
-                </span>
+                </a>
             </div>
             <a href="https://www.google.com/maps?q=Rua+Exemplo+123+Matinhos+PR" target="_blank" class="flex items-center gap-2 text-sm text-white font-medium hover:text-red-600">
-                📍 Rua Exemplo, 123 - Matinhos/PR
+                Rua Exemplo, 123 - Matinhos/PR
             </a>
         </div>
     </nav>
 </header>
 
-  <div class="flex flex-col items-center justify-center min-h-[100dvh] pt-24 pb-24 text-center">
+<div class="flex flex-col items-center justify-center min-h-[100dvh] pt-24 pb-24 text-center">
     <!-- Título -->
     <h1 class="text-3xl font-bold mb-6">Buscar Produtos</h1>
-    
+
     <!-- Campo de busca -->
     <input type="text" id="searchInput" placeholder="Digite para buscar..."
-      class="w-full max-w-md p-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
-      onkeyup="buscarItens()" />
-    
+        class="w-full max-w-md p-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+        onkeyup="buscarItens()" />
+
     <!-- Lista de itens -->
     <div id="lista" class="mt-6 w-full max-w-md space-y-3">
-    
-      <a href="produtoX.html" class="item block bg-white p-4 rounded-xl shadow hover:bg-gray-100 transition">X-Tudo</a>
-      <a href="produtoBebidaAgua.html" class="item block bg-white p-4 rounded-xl shadow hover:bg-gray-100 transition">Água</a>
-      <a href="produtoPizza.html" class="item block bg-white p-4 rounded-xl shadow hover:bg-gray-100 transition">Pizza de Calabresa</a>
-      <a href="produtoBebida.html" class="item block bg-white p-4 rounded-xl shadow hover:bg-gray-100 transition">Coca Cola</a>
-      <a href="produtoPizza3queijos.html" class="item block bg-white p-4 rounded-xl shadow hover:bg-gray-100 transition">Pizza 3 Queijos</a>
-      <a href="produtoXegg.html" class="item block bg-white p-4 rounded-xl shadow hover:bg-gray-100 transition">X-egg</a>
-    
+
+        <a href="produtoX.html"
+            class="item block bg-white p-4 rounded-xl shadow hover:bg-gray-100 transition">X-Tudo</a>
+        <a href="produtoBebidaAgua.html"
+            class="item block bg-white p-4 rounded-xl shadow hover:bg-gray-100 transition">Água</a>
+        <a href="produtoPizza.html" class="item block bg-white p-4 rounded-xl shadow hover:bg-gray-100 transition">Pizza
+            de Calabresa</a>
+        <a href="produtoBebida.html" class="item block bg-white p-4 rounded-xl shadow hover:bg-gray-100 transition">Coca
+            Cola</a>
+        <a href="produtoPizza3queijos.html"
+            class="item block bg-white p-4 rounded-xl shadow hover:bg-gray-100 transition">Pizza 3 Queijos</a>
+        <a href="produtoXegg.html"
+            class="item block bg-white p-4 rounded-xl shadow hover:bg-gray-100 transition">X-egg</a>
+
     </div>
-    
+
     <!-- Script -->
     <script>
-      function buscarItens() {
-        const input = document.getElementById("searchInput").value.toLowerCase();
-        const itens = document.querySelectorAll(".item");
+        function buscarItens() {
+            const input = document.getElementById("searchInput").value.toLowerCase();
+            const itens = document.querySelectorAll(".item");
 
-        itens.forEach(item => {
-          const texto = item.textContent.toLowerCase();
-          item.style.display = texto.includes(input) ? "block" : "none";
-        });
-      }
+            itens.forEach(item => {
+                const texto = item.textContent.toLowerCase();
+                item.style.display = texto.includes(input) ? "block" : "none";
+            });
+        }
     </script>
-  </div>
- 
+</div>
 
-  <footer class="fixed bottom-0 left-0 w-full bg-[#771D1D] py-3">
+
+<footer class="fixed bottom-0 left-0 w-full bg-[#771D1D] py-3">
                 <div class="flex justify-around items-center text-white text-2xl">
             
                     <a href="carrinho.html" class="flex flex-col items-center hover:text-gray-300 transition">
