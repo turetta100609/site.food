@@ -39,29 +39,44 @@
     </header>
 
     <!-- CONTEÚDO PRINCIPAL -->
-   <div class="text-center">
+    <div class="text-center">
     <!-- Título principal -->
-    <h2 class="text-4xl mb-8" style="font-family: 'Aboreto', cursive; margin: 40px;">Bebidas</h2>
+    <h2 class="text-4xl mb-8" style="font-family: 'Aboreto', cursive; margin: 40px;">Pizza</h2>
     <div class="flex flex-col md:flex-row items-center justify-center gap-8 px-4">
         <!-- Imagem -->
-        <img src="./src/css/img/redbull.avif" alt="Red Bull" class="w-full max-w-md md:max-w-xl rounded-lg shadow-md">
+        <img src="./src/css/img/duascamadas.avif" alt="Pizza de Calabresa" class="w-full max-w-md md:max-w-xl rounded-lg shadow-md">
         <!-- Texto à direita -->
         <div class="text-center md:text-left max-w-md" style="font-family: 'Aboreto', cursive;">
-            <h2 class="text-2xl mb-3">Red Bull</h2>
-            <p class="text-gray-700"> Energetico Red Bull, perfeito para acompanhar suas refeições.</p>
+            <h2 class="text-2xl mb-3">2 Camadas</h2>
+            <p class="text-gray-700"> Deliciosa pizza de 2 camadas com molho de tomate, queijo e fatias de tomate.</p>
             <div class="mt-4 text-left">
 
             <!-- Botão -->
-            <a href="/carrinho.html" onclick="toggleTamanhos()" class="bg-[#771D1D] text-white px-4 py-2 rounded hover:bg-green-700 transition">
-                Escolher 
-            </a>
+            <button onclick="toggleTamanhos()" class="bg-[#771D1D] text-white px-4 py-2 rounded hover:bg-green-700 transition">
+                Escolher tamanho
+            </button>
 
-            
+            <!-- Opções escondidas -->
+            <div id="tamanhos" class="hidden mt-3 flex flex-col gap-2">
+                <a href="carrinho.html" class="border text-center px-3 py-1 rounded hover:bg-gray-100">Pequena</a>
+                <a href="carrinho.html" class="border text-center px-3 py-1 rounded hover:bg-gray-100">Média</a>
+                <a href="carrinho.html" class="border text-center px-3 py-1 rounded hover:bg-gray-100">Grande</a>
+            </div>
+
+            </div>
+
+            <script>
+                function toggleTamanhos() {
+                    const div = document.getElementById("tamanhos");
+                    div.classList.toggle("hidden");
+                }
+            </script>
+
             
             <div class="flex items-center justify-center md:justify-start gap-4 mt-8">
             
                 <h2 class="text-4xl">
-                    R$15,00
+                    R$40,00
                 </h2>
             
                 <i class="fa-regular fa-heart text-2xl cursor-pointer transition transform" onclick="curtir(this)">
