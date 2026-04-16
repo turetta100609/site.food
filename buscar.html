@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>site.food</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Flowbite CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+
+
+<body class="bg-gray-100 min-h-screen flex flex-col">
+
+    <!-- NAVBAR -->
+    <header class="fixed top-0 left-0 w-full z-50">
+    <nav class="bg-[#771D1D] px-4 py-2.5 w-full">
+        <div class="flex justify-between items-center max-w-screen-xl mx-auto">
+            <div class="flex items-center">
+                <img src="./src/css/img/image 7.png" class="h-8 mr-3 rounded-full" />
+                <span class="text-white text-xl font-semibold">
+                    Artesano Pizza & Burger
+                </span>
+            </div>
+            <a href="https://www.google.com/maps?q=Rua+Exemplo+123+Matinhos+PR" target="_blank" class="flex items-center gap-2 text-sm text-white font-medium hover:text-red-600">
+                📍 Rua Exemplo, 123 - Matinhos/PR
+            </a>
+        </div>
+    </nav>
+</header>
+
+  <div class="flex flex-col items-center justify-center min-h-[100dvh] pt-24 pb-24 text-center">
+    <!-- Título -->
+    <h1 class="text-3xl font-bold mb-6">Buscar Produtos</h1>
+    
+    <!-- Campo de busca -->
+    <input type="text" id="searchInput" placeholder="Digite para buscar..."
+      class="w-full max-w-md p-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+      onkeyup="buscarItens()" />
+    
+    <!-- Lista de itens -->
+    <div id="lista" class="mt-6 w-full max-w-md space-y-3">
+    
+      <a href="produtoX.html" class="item block bg-white p-4 rounded-xl shadow hover:bg-gray-100 transition">X-Tudo</a>
+      <a class="item block bg-white p-4 rounded-xl shadow hover:bg-gray-100 transition">Mussarela</a>
+      <a href="produtoPizza.html" class="item block bg-white p-4 rounded-xl shadow hover:bg-gray-100 transition">Pizza de Calabresa</a>
+      <a href="produtoBebida.html" class="item block bg-white p-4 rounded-xl shadow hover:bg-gray-100 transition">Coca Cola</a>
+      <a class="item block bg-white p-4 rounded-xl shadow hover:bg-gray-100 transition">4 queijos</a>
+      <a class="item block bg-white p-4 rounded-xl shadow hover:bg-gray-100 transition">X-egg</a>
+    
+    </div>
+    
+    <!-- Script -->
+    <script>
+      function buscarItens() {
+        const input = document.getElementById("searchInput").value.toLowerCase();
+        const itens = document.querySelectorAll(".item");
+
+        itens.forEach(item => {
+          const texto = item.textContent.toLowerCase();
+          item.style.display = texto.includes(input) ? "block" : "none";
+        });
+      }
+    </script>
+  </div>
+ 
+
+  <footer class="fixed bottom-0 left-0 w-full bg-[#771D1D] py-3">
+                <div class="flex justify-around items-center text-white text-2xl">
+            
+                    <a href="carrinho.html" class="flex flex-col items-center hover:text-gray-300 transition">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                    
+                    <a href="favoritos.html" class="flex flex-col items-center hover:text-gray-300 transition">
+                        <i class="fa-regular fa-heart"></i>
+                    </a>
+                    
+                    <a href="index.html" class="flex flex-col items-center hover:text-gray-300 transition">
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+                    
+                    <a href="perfil.html" class="flex flex-col items-center hover:text-gray-300 transition">
+                        <i class="fa-regular fa-user"></i>
+                    </a>
+                    
+                    <a href="buscar.html" class="flex flex-col items-center hover:text-gray-300 transition">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+            
+                </div>
+            </footer>
+    
+
+</body>
+</html>
