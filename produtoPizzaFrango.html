@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>site.food</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Flowbite CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+
+<!--fonte personalizada-->
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+
+<body class="bg-gray-100">
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="bg-[#771D1D] px-4 py-2.5">
+            <div class="flex justify-between items-center max-w-screen-xl mx-auto">
+                <div class="flex items-center">
+                    <img src="./src/css/img/image 7.png" class="h-8 mr-3 rounded-full" />
+                    <span class="text-white text-xl font-semibold">
+                        Artesano Pizza & Burger
+                    </span>
+                    
+                </div>
+                <a href="https://www.google.com/maps?q=Rua+Exemplo+123+Matinhos+PR" target="_blank" class="flex items-center gap-2 text-sm text-white font-medium hover:text-red-600"> 📍 Rua Exemplo, 123 - Matinhos/PR </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+   <div class="text-center">
+    <!-- Título principal -->
+    <h2 class="text-4xl mb-8" style="font-family: 'Aboreto', cursive; margin: 40px;">Pizza</h2>
+    <div class="flex flex-col md:flex-row items-center justify-center gap-8 px-4">
+        <!-- Imagem -->
+        <img src="./src/css/img/frango.avif" alt="Pizza de Frango" class="w-full max-w-md md:max-w-xl rounded-lg shadow-md">
+        <!-- Texto à direita -->
+        <div class="text-center md:text-left max-w-md" style="font-family: 'Aboreto', cursive;">
+            <h2 class="text-2xl mb-3">Frango</h2>
+            <p class="text-gray-700"> Deliciosa pizza de frango com molho de tomate, queijo e fatias de frango.</p>
+            <div class="mt-4 text-left">
+
+            <!-- Botão -->
+            <button onclick="toggleTamanhos()" class="bg-[#771D1D] text-white px-4 py-2 rounded hover:bg-green-700 transition">
+                Escolher tamanho
+            </button>
+
+            <!-- Opções escondidas -->
+            <div id="tamanhos" class="hidden mt-3 flex flex-col gap-2">
+                <a href="carrinho.html" class="border text-center px-3 py-1 rounded hover:bg-gray-100">Pequena</a>
+                <a href="carrinho.html" class="border text-center px-3 py-1 rounded hover:bg-gray-100">Média</a>
+                <a href="carrinho.html" class="border text-center px-3 py-1 rounded hover:bg-gray-100">Grande</a>
+            </div>
+
+
+            </div>
+
+            <script>
+                function toggleTamanhos() {
+                    const div = document.getElementById("tamanhos");
+                    div.classList.toggle("hidden");
+                }
+            </script>
+
+            
+            <div class="flex items-center justify-center md:justify-start gap-4 mt-8">
+            
+                <h2 class="text-4xl">
+                    R$40,00
+                </h2>
+            
+                <i class="fa-regular fa-heart text-2xl cursor-pointer transition transform" onclick="curtir(this)">
+                </i>
+            
+            </div>
+            
+            <script>
+                function curtir(el) {
+                    el.classList.toggle("fa-solid");
+                    el.classList.toggle("fa-regular");
+                    el.classList.toggle("text-red-500");
+
+                    el.classList.add("scale-125");
+                    setTimeout(() => {
+                        el.classList.remove("scale-125");
+                    }, 150);
+                }
+            </script>
+            </div>
+            
+            </div>
+            
+            </div>
+
+            <footer class="fixed bottom-0 left-0 w-full bg-[#771D1D] py-3">
+                <div class="flex justify-around items-center text-white text-2xl">
+            
+                    <a href="carrinho.html" class="flex flex-col items-center hover:text-gray-300 transition">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                    
+                    <a href="favoritos.html" class="flex flex-col items-center hover:text-gray-300 transition">
+                        <i class="fa-regular fa-heart"></i>
+                    </a>
+                    
+                    <a href="index.html" class="flex flex-col items-center hover:text-gray-300 transition">
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+                    
+                    <a href="perfil.html" class="flex flex-col items-center hover:text-gray-300 transition">
+                        <i class="fa-regular fa-user"></i>
+                    </a>
+                    
+                    <a href="buscar.html" class="flex flex-col items-center hover:text-gray-300 transition">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+            
+                </div>
+            </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+
+</body>
+
+</html>
