@@ -114,9 +114,11 @@
                     Fazer pedido
                 </button>
 
-                <!-- POPUP -->
+                
+            </div>
+            <!-- POPUP -->
                 <div id="popupPedido"
-                    class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+                    class=" inset-0  hidden items-center justify-center z-50">
 
                     <div class="bg-white rounded-2xl p-6 w-80 text-center shadow-lg animate-scale">
 
@@ -129,7 +131,7 @@
 
                         <!-- Texto -->
                         <h2 class="text-xl font-semibold mb-2">Pedido realizado!</h2>
-                        <p class="text-gray-600 text-sm">Seu pedido foi enviado com sucesso 🎉</p>
+                        <p class="text-gray-600 text-sm">Seu pedido foi enviado com sucesso</p>
 
                         <!-- Botão -->
                         <button onclick="fecharPopup()"
@@ -154,12 +156,11 @@
                     </script>
 
                 </div>
-            </div>
 
         </div>
 
     </div>
-    <!-- FOOTER -->
+
     <footer class="fixed bottom-0 left-0 w-full bg-[#771D1D] py-3">
         <div class="flex justify-around items-center text-white text-2xl">
 
@@ -179,7 +180,7 @@
                 <i class="fa-regular fa-user"></i>
             </a>
 
-            <a href="buscar.html" class="flex flex-col items-center hover:text-gray-300 transition">
+            <a onclick="toggleSearch()" class="flex flex-col items-center hover:text-gray-300 transition">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </a>
 
