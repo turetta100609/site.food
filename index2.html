@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>site.food</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Flowbite CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="bg-[#771D1D] px-4 py-2.5">
+            <div class="flex justify-between items-center max-w-screen-xl mx-auto">
+                <div class="flex items-center">
+                    <img src="./src/css/img/image 7.png" class="h-8 mr-3 rounded-full" />
+                    <a href="index.html" class="text-white text-xl font-semibold">
+                        Artesano Pizza & Burger
+                    </a>
+                </div>
+                <a href="login.html" class="bg-white text-[#771D1D] px-4 py-2 rounded">
+                Login
+            </a>
+        </div>
+        </nav>
+    </header>
+
+    <div class="flex flex-col items-center pt-10 p-6">
+        <h1 class="text-4xl font-bold mb-6 text-gray-800">
+            BEM-VINDO!
+        </h1>
+
+        <div class="w-full max-w-3xl bg-[#771D1D] rounded-2xl shadow-lg p-4">
+
+            <div id="default-carousel" class="relative w-full" data-carousel="slide">
+
+                <div class="relative h-40 overflow-hidden rounded-lg md:h-64">
+
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                        <img src="./src/css/img/banner-de-venda-de-pizza-em-design-plano.png"
+                            class="w-full h-full object-contain" />
+                    </div>
+
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="./src/css/img/food-facebook-cover-08.jpg"
+                            class="w-full h-full object-contain" />
+                    </div>
+
+                </div>
+                <button type="button"
+                    class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-prev>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white/70">
+                        <svg class="w-4 h-4 text-black" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 1 1 5l4 4" />
+                        </svg>
+                    </span>
+                </button>
+                <button type="button"
+                    class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-next>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white/70">
+                        <svg class="w-4 h-4 text-black" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 9 4-4-4-4" />
+                        </svg>
+                    </span>
+                </button>
+
+            </div>
+        </div>
+        <div class="mt-8 flex justify-center gap-20">
+
+            <div class="mt-8 flex justify-center gap-20 flex-wrap">
+
+    <div class="flex flex-col items-center">
+        <div class="w-40 h-40 bg-red-600 rounded-full overflow-hidden flex items-center justify-center shadow-md">
+            <img src="./src/css/img/pizza-logo.png" class="w-full h-full object-cover">
+        </div>
+        <span class="mt-2 text-sm font-medium">PIZZAS</span>
+    </div>
+
+    <div class="flex flex-col items-center">
+        <div class="w-40 h-40 bg-red-600 rounded-full overflow-hidden flex items-center justify-center shadow-md">
+            <img src="./src/css/img/burguer-logo.png" class="w-full h-full object-cover">
+        </div>
+        <span class="mt-2 text-sm font-medium">BURGUER</span>
+    </div>
+
+    <div class="flex flex-col items-center">
+        <div class="w-40 h-40 bg-red-600 rounded-full overflow-hidden flex items-center justify-center shadow-md">
+            <img src="./src/css/img/drink-logo.png" class="w-full h-full object-cover">
+        </div>
+        <span class="mt-2 text-sm font-medium">BEBIDA</span>
+    </div>
+
+</div>
+
+    </div>
+    <div class="flex flex-col items-center pt-20 p-6 ">
+        <h2 class="text-center text-gray-500 text-sm mb-4 tracking-widest">
+            MAIS PEDIDOS
+        </h2>
+
+        <div class="mt-10 w-full max-w-3xl">
+
+            <!-- ITEM 1 -->
+            <div class="flex items-center justify-between bg-white rounded-xl shadow p-3 mb-3">
+
+                <!-- Esquerda -->
+                <div href="./produtoPizza.html" class="flex items-center gap-3">
+                    <img src="./src/css/img/calabresa.avif" class="w-16 h-16 rounded-lg object-cover">
+
+                    <div>
+                        <h3 class="font-semibold text-gray-800">CALABRESA</h3>
+                        <p class="text-xs text-gray-500">
+                            Molho de tomate, mussarela, calabresa...
+                        </p>
+                        <span class="text-sm font-medium text-gray-700">R$0,00</span>
+                    </div>
+                </div>
+
+                <!-- Botão -->
+                <a href="./produtoPizza.html" class="w-8 h-8 rounded-full border flex items-center justify-center text-lg">
+                    +
+                </a>
+            </div>
+
+            <!-- ITEM 2 -->
+            <div class="flex items-center justify-between bg-white rounded-xl shadow p-3 mb-3">
+
+                <div class="flex items-center gap-3">
+                    <img src="./src/css/img/xtudo.avif" class="w-16 h-16 rounded-lg object-cover">
+
+                    <div>
+                        <h3 class="font-semibold text-gray-800">X-TUDO</h3>
+                        <p class="text-xs text-gray-500">
+                            Carne artesanal, frango desfiado, presunto...
+                        </p>
+                        <span class="text-sm font-medium text-gray-700">R$30,00</span>
+                    </div>
+                </div>
+
+                <a href="./produtoX.html" class="w-8 h-8 rounded-full border flex items-center justify-center text-lg">
+                    +
+                </a>
+            </div>
+
+        </div>
+        <div class="mt-10">
+            <h2 class="font-bold text-3xl mb-5 text-center underline text-gray-800">SOBRE NÓS</h2>
+            <img src="./src/css/img/GHP_Gastronomia_Arte_Pizza_503.jpg" class="w-[60rem] h-80 object-cover rounded-lg">
+            <div class="w-full max-w-5xl mt-5">
+                <p class="text-gray-700 text-align: center; mt-5" style="font-family: 'Aboreto', cursive; ">
+                    Tudo começou com um sonho simples: criar um lugar onde as pessoas pudessem se reunir e aproveitar bons momentos ao redor de uma mesa.Entre receitas caseiras e testes com amigos e família, nasceu a nossa paixão.<br> As pizzas passaram a ser feitas com massa artesanal, aberta à mão, e os hambúrgueres com ingredientes selecionados, sempre buscando sabor e qualidade em cada detalhe.Mais do que servir comida, queremos proporcionar experiências.<br> Um ambiente acolhedor, perfeito para relaxar, comemorar ou simplesmente saborear algo especial.Seguimos crescendo, sem esquecer nossa essência: fazer tudo com dedicação, carinho e amor pelo que fazemos.<br><br> <span class="font-bold text-2xl text-[#771D1D]">bem-vindo</span> — aqui, cada sabor tem uma história.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+<div>
+    <div class="max-w-4xl mx-auto">
+
+    <!-- PIZZAS -->
+    <h2 class="text-center text-gray-500 text-sm mb-4 tracking-widest pt-20">
+        PIZZAS
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 px-4">
+
+        <!-- CARD -->
+        <div class="bg-white rounded-lg shadow-md p-3 flex justify-between items-center h-24">
+            <div class="flex gap-3 items-center">
+                <img src="./src/css/img/calabresa.avif" class="w-20 h-16 object-cover rounded-md">
+                <div class="flex flex-col justify-between h-16">
+                    <h3 class="text-sm font-semibold">CALABRESA</h3>
+                    <p class="text-gray-600 text-xs overflow-hidden">Molho de tomate, mussarela, presunto...</p></p>
+                </div>
+            </div>
+            <a href="./produtoPizza.html" class="w-7 h-7 border rounded-full flex items-center justify-center">+</a>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-3 flex justify-between items-center h-24">
+            <div class="flex gap-3 items-center">
+                <img src="./src/css/img/duascamadas.avif" class="w-20 h-16 object-cover rounded-md">
+                <div class="flex flex-col justify-between h-16">
+                    <h3 class="text-sm font-semibold">DUAS CAMADAS</h3>
+                    <p class="text-gray-600 text-xs overflow-hidden">Molho de tomate, mussarela...</p>
+                </div>
+            </div>
+            <a href="./produtoPizzaDuasCamadas.html" class="w-7 h-7 border rounded-full flex items-center justify-center">+</a>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-3 flex justify-between items-center h-24">
+            <div class="flex gap-3 items-center">
+                <img src="./src/css/img/3queijos.avif" class="w-20 h-16 object-cover rounded-md">
+                <div class="flex flex-col justify-between h-16">
+                    <h3 class="text-sm font-semibold">3 QUEIJOS</h3>
+                    <p class="text-gray-600 text-xs overflow-hidden">Mussarela, catupiry, provolone...</p>
+                </div>
+            </div>
+            <a href="./produtoPizza3queijos.html" class="w-7 h-7 border rounded-full flex items-center justify-center">+</a>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-3 flex justify-between items-center h-24">
+            <div class="flex gap-3 items-center">
+                <img src="./src/css/img/frango.avif" class="w-20 h-16 object-cover rounded-md">
+                <div class="flex flex-col justify-between h-16">
+                    <h3 class="text-sm font-semibold">FRANGO</h3>
+                    <p class="text-gray-600 text-xs overflow-hidden">Frango, mussarela, azeitona...</p>
+                </div>
+            </div>
+            <a href="./produtoPizzaFrango.html" class="w-7 h-7 border rounded-full flex items-center justify-center">+</a>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-3 flex justify-between items-center h-24">
+            <div class="flex gap-3 items-center">
+                <img src="./src/css/img/milhobacon.avif" class="w-20 h-16 object-cover rounded-md">
+                <div class="flex flex-col justify-between h-16">
+                    <h3 class="text-sm font-semibold">MILHO C/ BACON</h3>
+                    <p class="text-gray-600 text-xs overflow-hidden">Milho, bacon e mussarela...</p>
+                </div>
+            </div>
+            <a href="./produtoPizzaMilhoCbacon.html" class="w-7 h-7 border rounded-full flex items-center justify-center">+</a>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-3 flex justify-between items-center h-24">
+            <div class="flex gap-3 items-center">
+                <img src="./src/css/img/calabacon.avif" class="w-20 h-16 object-cover rounded-md">
+                <div class="flex flex-col justify-between h-16">
+                    <h3 class="text-sm font-semibold">CALABACON</h3>
+                    <p class="text-gray-600 text-xs overflow-hidden">Calabresa, bacon e cebola...</p>
+                </div>
+            </div>
+            <a href="./produtoPizzaCalabacon.html" class="w-7 h-7 border rounded-full flex items-center justify-center">+</a>
+        </div>
+
+    </div>
+
+    <!-- BURGUERS -->
+    <h2 class="text-center text-gray-500 text-sm mb-4 tracking-widest pt-20">
+        BURGUERS
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 px-4">
+
+        <div class="bg-white rounded-lg shadow-md p-3 flex justify-between items-center h-24">
+            <div class="flex gap-3 items-center">
+                <img src="./src/css/img/xbacon.avif" class="w-20 h-16 object-cover rounded-md">
+                <div class="flex flex-col justify-between h-16">
+                    <h3 class="text-sm font-semibold">X-BACON</h3>
+                    <p class="text-gray-600 text-xs overflow-hidden">Carne, queijo, bacon...</p>
+                    <p class="text-sm font-semibold">R$25,90</p>
+                </div>
+            </div>
+            <a href="./produtoXbacon.html" class="w-7 h-7 border rounded-full flex items-center justify-center">+</a>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-3 flex justify-between items-center h-24">
+            <div class="flex gap-3 items-center">
+                <img src="./src/css/img/xtudo.avif" class="w-20 h-16 object-cover rounded-md">
+                <div class="flex flex-col justify-between h-16">
+                    <h3 class="text-sm font-semibold">X-TUDO</h3>
+                    <p class="text-gray-600 text-xs overflow-hidden">Carne, frango, cheddar...</p>
+                    <p class="text-sm font-semibold">R$25,90</p>
+                </div>
+            </div>
+            <a href="./produtoX.html" class="w-7 h-7 border rounded-full flex items-center justify-center">+</a>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-3 flex justify-between items-center h-24">
+            <div class="flex gap-3 items-center">
+                <img src="./src/css/img/xegg.avif" class="w-20 h-16 object-cover rounded-md">
+                <div class="flex flex-col justify-between h-16">
+                    <h3 class="text-sm font-semibold">X-EGG</h3>
+                    <p class="text-gray-600 text-xs overflow-hidden">Carne, ovo, queijo...</p>
+                    <p class="text-sm font-semibold">R$25,90</p>
+                </div>
+            </div>
+            <a href="./produtoXegg.html" class="w-7 h-7 border rounded-full flex items-center justify-center">+</a>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-3 flex justify-between items-center h-24">
+            <div class="flex gap-3 items-center">
+                <img src="./src/css/img/xsalada.avif" class="w-20 h-16 object-cover rounded-md">
+                <div class="flex flex-col justify-between h-16">
+                    <h3 class="text-sm font-semibold">X-SALADA</h3>
+                    <p class="text-gray-600 text-xs overflow-hidden">Carne, alface e tomate...</p>
+                    <p class="text-sm font-semibold">R$25,90</p>
+                </div>
+            </div>
+            <a href="./produtoXsalada.html" class="w-7 h-7 border rounded-full flex items-center justify-center">+</a>
+        </div>
+
+    </div>
+
+    <!-- BEBIDAS -->
+    <h2 class="text-center text-gray-500 text-sm mb-4 tracking-widest pt-20">
+        BEBIDAS
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 px-4">
+
+        <div class="bg-white rounded-lg shadow-md p-3 flex justify-between items-center h-24">
+            <div class="flex gap-3 items-center">
+                <img src="./src/css/img/coca.avif" class="w-20 h-16 object-cover rounded-md">
+                <div class="flex flex-col justify-between h-16">
+                    <h3 class="text-sm font-semibold">COCA-COLA LATA</h3>
+                    <p class="text-sm font-semibold">R$8,00</p>
+                </div>
+            </div>
+            <a href="./produtoBebida.html" class="w-7 h-7 border rounded-full flex items-center justify-center">+</a>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-3 flex justify-between items-center h-24">
+            <div class="flex gap-3 items-center">
+                <img src="./src/css/img/schweppes.avif" class="w-20 h-16 object-cover rounded-md">
+                <div class="flex flex-col justify-between h-16">
+                    <h3 class="text-sm font-semibold">SCHWEPPES LATA</h3>
+                    <p class="text-sm font-semibold">R$8,00</p>
+                </div>
+            </div>
+            <a href="./produtoBebidaSchweppes.html" class="w-7 h-7 border rounded-full flex items-center justify-center">+</a>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-3 flex justify-between items-center h-24">
+            <div class="flex gap-3 items-center">
+                <img src="./src/css/img/agua.avif" class="w-20 h-16 object-cover rounded-md">
+                <div class="flex flex-col justify-between h-16">
+                    <h3 class="text-sm font-semibold">ÁGUA 500ML</h3>
+                    <p class="text-sm font-semibold">R$5,00</p>
+                </div>
+            </div>
+            <a href="./produtoBebidaAgua.html" class="w-7 h-7 border rounded-full flex items-center justify-center">+</a>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-3 flex justify-between items-center h-24">
+            <div class="flex gap-3 items-center">
+                <img src="./src/css/img/reedbull.avif" class="w-20 h-16 object-cover rounded-md">
+                <div class="flex flex-col justify-between h-16">
+                    <h3 class="text-sm font-semibold">RED BULL 250ML</h3>
+                    <p class="text-sm font-semibold">R$15,00</p>
+                </div>
+            </div>
+            <a href="./produtoBebidaRedbull.html" class="w-7 h-7 border rounded-full flex items-center justify-center">+</a>
+        </div>
+
+    </div>
+
+</div>
+
+
+    </div>
+    
+        
+
+    </div>
+    
+    <footer class="mt-auto w-full bg-[#771D1D] text-white py-8">
+    
+        <div class="flex flex-col md:flex-row items-center justify-center gap-4">
+            <p>© 2026 Artesano Pizza & Burger. Todos os direitos reservados.</p>
+    
+            <a href="login.html" class="bg-white text-[#771D1D] px-4 py-2 rounded">
+                Login
+            </a>
+        </div>
+    
+    </footer>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+
+</body>
+
+</html>
